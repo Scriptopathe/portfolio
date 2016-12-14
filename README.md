@@ -41,6 +41,9 @@ let entry : common.Entry = {
     experienceType: common.ExperienceType.Academic,
     category: "Wireless Networks",
     
+    // Ici une image jolie :)
+    thumbnailUrl: "http://www.skyhdwallpaper.com/wp-content/uploads/2014/12/Wireless-Network.jpg",
+    
     // Ici les tags correspondant à cette entrée.
     // Il peut s'agir de compétences de la matrice de compétence,
     // ou de mots clés.
