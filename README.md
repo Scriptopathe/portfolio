@@ -1,31 +1,125 @@
-# Portfolio
+# Dependences
+Node :              ```sudo apt-get install nodejs``` 
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
+# Premier démarrage
+Installation du portfolio et des packages :
+```
+git clone https://github.com/Scriptopathe/portfolio
+cd portfolio
+npm install
+```
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Démarrage du serveur
+Pour démarrer le serveur :
+```
+npm start
+```
 
-## Code scaffolding
+Pour visiter la page, c'est sur http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+# Déployer sur etud
 
-## Build
+```bash
+chmod u+x build.sh 
+./build.sh usernameEtud
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Exemple : ```./build.sh j_alvare```
+Le mot de passe etud sera demandé à deux reprises lors de la procédure de déploiement.
 
-## Running unit tests
+Pour voir le résultat du déploiement :
+www.etud.insa-toulouse.fr/~usernameEtud/portfolio/dist
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Ajout de documents dans le portfolio
+Créer un fichier dans ```app/entries/myentry.ts```.
 
-## Running end-to-end tests
+```typescript
+import * as common from './common'
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+let entry : common.Entry = {
+    name: "Sigfox LPWAN phy and mac analysis",
+    experienceType: common.ExperienceType.Academic,
+    category: "Wireless Networks",
+    
+    // Ici les tags correspondant à cette entrée.
+    // Il peut s'agir de compétences de la matrice de compétence,
+    // ou de mots clés.
+    tags: ["Wireless Networks", "Sigfox", "LORA", "LPWAN"],
 
-## Deploying to Github Pages
+    // ----------------------------------------------------------
+    // Ici, un résumé du travail présenté.
+    // On peut y insérer du *markdown*. 
+    // ----------------------------------------------------------
+    abstract: `
+# Titre
+blablabla
+## Sous Titre
+blablablabla
+`,
+    // ----------------------------------------------------------
+    // Ici, c'est la phase d'analyse : les enseignements retirés
+    // de l'expérience. 
+    // C'est l'argumentaire qui prouve qu'on a acquis certaines 
+    // compétences de la matrice.
+    // On peut y insérer du *markdown*.
+    // ----------------------------------------------------------
+    conclusion: `
+# Titre
+bmabmabmabma
+## SOus Titre
+balbablababl
+`,
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+    // ----------------------------------------------------------
+    // Ici, Le contenu de l'entrée du portfolio. 
+    // Cela peut être un document PDF, markdown ou un simple lien.
+    // ----------------------------------------------------------
+    content: {
+        contentType: common.ContentType.PDFDocumentURL,
+        contentValue: 
+        `static/sigfox-analysis.pdf`
+    }
+};
 
-## Further help
+common.library.entries.push(entry)
+```
 
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pour ajouter cette entrée au portfolio, il suffit d'importer le fichier 
+dans ```àpp/entries/index.ts``` :
+
+```typescript
+import './myentry'
+```
+
+# Contenu des documents
+## Document PDF
+Permet d'intégrer un lecteur PDF embarqué dans la page de contenu :
+```typescript
+    content: {
+        contentType: common.ContentType.PDFDocumentURL,
+        contentValue: 
+        `static/sigfox-analysis.pdf`
+    }
+```
+
+## Document markdown
+Permet d'intégrer un document markdown embarqué dans la page de contenu.
+
+```typescript
+    content: {
+        contentType: common.ContentType.RawMarkdownDocumentURL,
+        contentValue: 
+`
+# Du markdown 
+`
+    }
+```
+
+## Lien simple
+```typescript
+    content: {
+        contentType: common.ContentType.Link,
+        contentValue: 
+        `http://example.com`
+    }
+```
