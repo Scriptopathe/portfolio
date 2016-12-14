@@ -1,20 +1,38 @@
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { HttpModule }   from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { AppRoutingModule } from './app-routing-module';
 
-import { AppComponent } from './app.component';
+
+import { AppComponent }  from './components/app.component';
+import { UserPanelComponent } from './components/userpanel.component';
+import { DashboardComponent } from './components/dashboard.component';
+import { MarkdownComponent } from './components/markdown.component';
+import { EntryViewerComponent } from './components/entry-viewer.component';
+import { PresentationComponent } from './components/presentation.component';
+import { DataService } from './services/data.service';
+
+import * as router from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  imports:      [ BrowserModule, 
+                  HttpModule,
+                  AppRoutingModule,
+                  FormsModule,
+                ],
+  declarations: [ AppComponent, 
+                  UserPanelComponent, 
+                  DashboardComponent,
+                  EntryViewerComponent,
+                  MarkdownComponent,
+                  PresentationComponent
+                ],
+  providers:    [
+    DataService,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap:    [ AppComponent ],
 })
+
 export class AppModule { }
