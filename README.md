@@ -5,6 +5,7 @@ Node :              ```sudo apt-get install nodejs```
 Installation du portfolio et des packages :
 ```
 git clone https://github.com/Scriptopathe/portfolio
+git branch release-1.0
 cd portfolio
 npm install
 ```
