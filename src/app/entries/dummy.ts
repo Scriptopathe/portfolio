@@ -1,9 +1,13 @@
 import * as common from './common'
+import { Modules } from './competences'
 
 let entry : common.Entry = {
     name: "Dummy Entry",
     experienceType: common.ExperienceType.Academic,
-    category: "Category1",
+    module: Modules.DataProcessing,
+    competences: Modules.Competences([
+        Modules.Competence(Modules.MiddlewareService, 1)
+    ]),
     tags: ["TagLulz", "TagLalz"],
     abstract: `This is an abstract description`,
     conclusion: `This is the conclusion`,
@@ -23,7 +27,15 @@ common.library.entries.push(entry)
 entry = {
     name: "Dummy Entry 2",
     experienceType: common.ExperienceType.Professional,
-    category: "Category1",
+    module: Modules.DataProcessing,    
+    competences: Modules.Competences([
+        Modules.Competence(Modules.WirelessNetworks),
+        Modules.Competence(Modules.SmartDevices),
+        Modules.Competence(Modules.DataProcessing),
+        Modules.Competence(Modules.InnovationAndHumanities),
+        Modules.Competence(Modules.DataProcessing),
+        Modules.Competence(Modules.Project)
+    ]),
     tags: ["TagLulz", "TagLalz"],
     abstract: `This is an abstract description`,
     conclusion: `This is the conclusion`,
@@ -32,7 +44,7 @@ entry = {
         contentValue: 
         `
 # This is markdown
-See what i *mean*        
+See what i *mean*
 `
     },
     thumbnailUrl: "http://materializecss.com/images/sample-1.jpg"

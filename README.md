@@ -1,5 +1,5 @@
 # Dependences
-Node :              ```sudo apt-get install nodejs``` 
+Node :              ```sudo apt-get install nodejs```
 
 # Premier démarrage
 Installation du portfolio et des packages :

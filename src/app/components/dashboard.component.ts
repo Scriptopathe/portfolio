@@ -17,7 +17,7 @@ export interface Filter {
     displayName : string
 }
 
-export type FilterFunction = ((entry : Entry) => string);
+export type FilterFunction = ((entry : Entry) => string[]);
 
 @Component({
     selector: 'dashboard',
@@ -59,7 +59,7 @@ export type FilterFunction = ((entry : Entry) => string);
         ])
     ]
 })
-export class DashboardComponent  { 
+export class DashboardComponent  {
     entryByField: { [id : string]: Entry[] }
 
     /** 
@@ -81,24 +81,30 @@ export class DashboardComponent  {
 
     constructor(private route : ActivatedRoute, private dataService : DataService) {
         this.filters = [
-            { name: "category", displayName: "Category" },
-            { name: "experienceType", displayName: "Experience Type" }
+            { name: "module", displayName: "Module" },
+            { name: "experienceType", displayName: "Experience Type" },
         ]
 
-        this.filterName = "category"
+        this.filterName = "module"
         this.filterFunction = this.getFilterFunction("")
         this.filterValue = "all"
         this.computeCategories()
     }
 
+    showSelector() {
+        return this.filters.find((filter) => filter.name == this.filterName) != undefined
+    }
+
     getFilterFunction(filterName : string) : FilterFunction {
         switch(filterName) {
+            case "competence":
+                return (entry : Entry) => { return entry.competences.map((cmpId) => cmpId.asString())}
             case "category":
-                return (entry : Entry) => { return entry.category }
+                return (entry : Entry) => { return [entry.module.name] }
             case "experienceType":
-                return (entry : Entry) => { return experienceType2Str(entry.experienceType) }
+                return (entry : Entry) => { return [experienceType2Str(entry.experienceType)] }
             default:
-                return (entry : Entry) => { return entry.category }
+                return (entry : Entry) => { return [entry.module.name] }
         }
     }
 
@@ -110,7 +116,7 @@ export class DashboardComponent  {
         this.route
             .params
             .subscribe(params => {
-                this.filterName = params['filter'] == undefined ? "category" : params['filter']
+                this.filterName = params['filter'] == undefined ? "module" : params['filter']
                 this.filterValue = params['value'] == undefined ? "all" : params['value']
                 this.filterFunction = this.getFilterFunction(this.filterName)
                 this.computeCategories()
@@ -123,11 +129,13 @@ export class DashboardComponent  {
     computeCategories() {
         let categories : { [id : string]: Entry[] } = {}
         for(let entry of this.dataService.library.entries) {
-            let filterValue = this.filterFunction(entry)
-            if(!(filterValue in categories))
-                categories[filterValue] = []
-            
-            categories[filterValue].push(entry)
+            let filterValues = this.filterFunction(entry)
+            for(let filterValue of filterValues) {
+                if(!(filterValue in categories))
+                    categories[filterValue] = []
+                
+                categories[filterValue].push(entry)
+            }
         }
 
         this.entryByField = categories
@@ -140,7 +148,7 @@ export class DashboardComponent  {
         if(this.filterValue == "all")
             return true
         else {
-            return this.filterFunction(entry) == this.filterValue
+            return this.filterFunction(entry).indexOf(this.filterValue) != -1
         }
     }
 

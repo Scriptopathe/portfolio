@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row" *ngFor="let moduleRow of moduleRows">
+        <div class="col m6" *ngFor="let module of moduleRow">
+            <div class="card">
+                <div class="card-content" style="min-height: 20em; max-height: 60em; overflow: auto">
+                    <span class="card-title">{{ module.name }}</span>
+                    <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+                        <li *ngFor="let uf of module.ufs; let ufId = index">
+                            <div class="collapsible-header grey lighten-5">{{ ufId + 1 }}. {{ uf.name }}</div> <!-- grey lighten-5 -->
+                            <div class="collapsible-body">
+                                <table class="centered highlight">
+                                    <tbody>
+                                        <tr *ngFor="let competence of getKeys(uf); let i = index">
+                                            <td [class]="module.color + ' lighten-5' " style="width: 4em">{{ i + 1 }}</td>
+                                            <td><a class="grey-text text-darken-4" [routerLink]="['/portfolio/competence', module.name + '::' + ufId + '::' + competence]">
+                                                {{ uf.competences[competence] }}
+                                            </a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div [class]="'card-action ' + module.color + ' lighten-5' ">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

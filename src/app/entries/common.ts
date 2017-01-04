@@ -1,3 +1,5 @@
+import { Module, CompetenceID } from './competences'
+
 /**
  * Represents the different kind of experience types.
  */
@@ -39,7 +41,8 @@ export interface Entry
 {
     name : string, 
     experienceType : ExperienceType
-    category : string
+    competences : CompetenceID[]
+    module : Module
     tags : string[]
     abstract : string
     conclusion : string
@@ -73,5 +76,7 @@ function experienceType2Str(ct : ExperienceType) : string {
     }
 }
 
+
+// Exports
 export { library }
 export { experienceType2Str }

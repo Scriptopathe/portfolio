@@ -4,11 +4,13 @@ import { AppComponent }  from './components/app.component';
 import { UserPanelComponent } from './components/userpanel.component';
 import { DashboardComponent } from './components/dashboard.component';
 import { PresentationComponent } from './components/presentation.component';
+import { MatrixComponent } from './components/matrix.component';
 
 const appRoutes: Routes = [
   { path: 'portfolio', component: DashboardComponent },
   { path: 'portfolio/:filter/:value', component: DashboardComponent },
   { path: 'presentation', component: PresentationComponent },
+  { path: 'matrix', component: MatrixComponent },
   { path: '**', component: PresentationComponent  }
 ];
 

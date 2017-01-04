@@ -1,9 +1,14 @@
 import * as common from './common'
+import { Modules } from './competences'
 
 let entry : common.Entry = {
     name: "Sigfox LPWAN phy and mac analysis",
     experienceType: common.ExperienceType.Academic,
-    category: "Wireless Networks",
+    module: Modules.WirelessNetworks,
+    competences: Modules.Competences([
+        Modules.Competence(Modules.WirelessNetworks, 1, 1),
+        Modules.Competence(Modules.WirelessNetworks, 2)
+    ]),
     tags: ["Wireless Networks", "Sigfox", "LORA", "LPWAN"],
     abstract: `
 # Titre

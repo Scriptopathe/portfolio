@@ -7,12 +7,43 @@
             </div>
             
             <div class="card-content" [style.min-height]="minHeight">
-                <span (click)="toogleExpand()" class="card-title activator grey-text text-darken-4">{{entry.name}}<i class="material-icons right">click for details</i></span>
+                <span (click)="toogleExpand()" class="card-title activator grey-text text-darken-4">
+                    {{entry.name}}
+                </span>
                 <h5>Abstract</h5>
                 <markdown [data]="entry.abstract">
                 </markdown>
                 <h5>Experience Gains</h5>
-                {{ entry.conclusion }}
+                <markdown [data]="entry.conclusion">
+                </markdown>
+
+
+                <!-- Competences -->
+                <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header grey lighten-5">
+                            Competences
+                            <div class="right-align" style="margin-top: -3em">
+                                <div [class]="' chip ' + entry.module.color + ' lighten-3'">{{entry.module.name}}</div>
+                            </div>
+                        </div> <!-- grey lighten-5 -->
+                        <div class="collapsible-body">
+                            <table class="centered highlight bordered">
+                                <tbody>
+                                    <tr *ngFor="let competence of entry.competences;">
+                                        <td [class]="competence.module.color + ' lighten-5' " style="width: 6em">
+                                            {{ competence.module.name }} 
+                                        </td>
+                                        <td [class]="competence.module.color + ' lighten-4' " style="width: 2em">
+                                            {{ competence.ufId + 1 }}.{{competence.competenceId + 1 }}
+                                        </td>
+                                        <td>{{ competence.module.ufs[competence.ufId].competences[competence.competenceId] }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
             <div class="card-reveal">
@@ -52,19 +83,16 @@
                         <br />
                     </div>
                 </div>
-
             </div>
+
             <div class="card-action">
-                <strong>Tags: </strong> 
-                <div class="chip" *ngFor="let tag of entry.tags">{{tag}}</div>
-            </div>
-
+                <strong>Tags: </strong>
+                <span class="chip" style="line-height: 1em; height: 1em;" *ngFor="let tag of entry.tags">{{tag}} </span>
             
+            </div>
         </div>
     </div>
 </div>
-
-            
 <!--
     <div class="material-box-title">{{entry.name}}</div> 
     <h4>Abstract</h4>

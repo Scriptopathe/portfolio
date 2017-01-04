@@ -12,7 +12,10 @@ import { DashboardComponent } from './components/dashboard.component';
 import { MarkdownComponent } from './components/markdown.component';
 import { EntryViewerComponent } from './components/entry-viewer.component';
 import { PresentationComponent } from './components/presentation.component';
+import { MatrixComponent } from './components/matrix.component';
 import { DataService } from './services/data.service';
+
+import { MaterializeDirective } from "angular2-materialize";
 
 import * as router from '@angular/router';
 
@@ -27,7 +30,9 @@ import * as router from '@angular/router';
                   DashboardComponent,
                   EntryViewerComponent,
                   MarkdownComponent,
-                  PresentationComponent
+                  PresentationComponent,
+                  MatrixComponent,
+                  MaterializeDirective
                 ],
   providers:    [
     DataService,
