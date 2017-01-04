@@ -39,11 +39,25 @@ import * as common from './common'
 let entry : common.Entry = {
     name: "Sigfox LPWAN phy and mac analysis",
     experienceType: common.ExperienceType.Academic,
-    category: "Wireless Networks",
+
+    // Le module INSA dans lequel est classée l'entrée du portfolio.
+    module: Modules.WirelessNetworks,
+    
+    // Les compétences associées à cette entrée de portfolio.
+    competences: Modules.Competences([
+        // Ici, représente la première compétence de l'UF 1 du module
+        // WirelessNetworks de la matrice de cométences. 
+        Modules.Competence(Modules.WirelessNetworks, 1, 1),
+        // Ici, représente toutes les compétences de l'UF 2 du module
+        // SmartDevices de la matrice de cométences. 
+        Modules.Competence(Modules.SmartDevices, 2),
+        // Ici, représente toutes les compétences de toutes les UF du module
+        // DataProcessing de la matrice de cométences. 
+        Modules.Competence(Modules.DataProcessing)
+    ]),
     
     // Ici les tags correspondant à cette entrée.
-    // Il peut s'agir de compétences de la matrice de compétence,
-    // ou de mots clés.
+    // Il s'agit principalement de mots clefs.
     tags: ["Wireless Networks", "Sigfox", "LORA", "LPWAN"],
 
     // ----------------------------------------------------------
