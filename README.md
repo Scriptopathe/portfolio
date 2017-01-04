@@ -1,3 +1,9 @@
+# NOTES IMPORTANTES - RELEASE 1.0
+Le manuel de la release 1.0 est disponible ici : https://github.com/Scriptopathe/portfolio/tree/release-1.0 
+
+Ce README concerne la version 0.0 du projet. Cette version n'est plus maintenue.
+La version actuelle est la RELEASE 1.0. 
+
 # Dependences
 Node :              ```sudo apt-get install nodejs``` 
 
