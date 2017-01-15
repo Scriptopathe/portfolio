@@ -28,7 +28,9 @@ export class EntryViewerComponent  {
      * revealed. 
      */
     get minHeight() {
-        var minHeight = this._expanded ? "800px" : "200px"
+        let appendixCount = this.entry.annexes ? this.entry.annexes.length : 0
+        let totalSize = (50 * appendixCount + 800) + "px"
+        var minHeight = this._expanded ? totalSize : "200px"
         var value = this.entry.content.contentType == ContentType.PDFDocumentURL ? minHeight : "200px"
         return this.sanitizer.bypassSecurityTrustStyle(value)
     }

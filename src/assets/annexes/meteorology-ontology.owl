@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_130e0a94_36f0_401a_bb33_fa75977e4d3d -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_130e0a94_36f0_401a_bb33_fa75977e4d3d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="fr">EstSituéDans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_1ff22eda_ec30_4a8f_a109_20a52afe51d3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_1ff22eda_ec30_4a8f_a109_20a52afe51d3">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf"/>
+        <rdfs:label xml:lang="fr">APourInstant</rdfs:label>
+        <rdfs:label>a pour date</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_24798d87_7877_4fdc_968d_dd1ea8e8488b -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_24798d87_7877_4fdc_968d_dd1ea8e8488b">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9e7b2251_07a5_4c6d_8699_aa700f474ea2"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_f190f602_937a_4d22_9534_7b024a1e44f5"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_740d30ef_e895_4bca_a9d5_96d837893f8d"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_24798d87_7877_4fdc_968d_dd1ea8e8488b"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f"/>
+        <rdfs:label xml:lang="fr">APourCapitale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_36eb70b4_4ef1_4641_b2d1_a3ec1199d3ab -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_36eb70b4_4ef1_4641_b2d1_a3ec1199d3ab">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_27ecb238_e31b_40a7_b9f7_f5715e1c3909"/>
+        <rdfs:label xml:lang="fr">APourSymptome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_372cc2cc_c4bf_4fde_8e2e_a8bc82348ba2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_372cc2cc_c4bf_4fde_8e2e_a8bc82348ba2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf"/>
+        <rdfs:label xml:lang="fr">APourDebut</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_615f2fa3_276a_4ead_8ef3_ed66af6c488f -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_615f2fa3_276a_4ead_8ef3_ed66af6c488f">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_8000353d_b9e1_4281_9eaf_a2ca56d15215"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_968f549d_69c8_48a5_b26e_9d7a484faf1d"/>
+        <rdfs:label xml:lang="fr">EstSituéSur</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_7ae446ee_a9da_4133_8110_0f5b67c5c859 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_7ae446ee_a9da_4133_8110_0f5b67c5c859">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_967d5b78_d9ef_4ca7_a14a_34d8a1f91bca"/>
+        <rdfs:label xml:lang="fr">Caractérise</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9290938f_f049_4a18_9c43_1cec5ffb628e -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9290938f_f049_4a18_9c43_1cec5ffb628e">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="fr">Mesure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_967d5b78_d9ef_4ca7_a14a_34d8a1f91bca -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_967d5b78_d9ef_4ca7_a14a_34d8a1f91bca">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="fr">EstCaractériséPar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9e7b2251_07a5_4c6d_8699_aa700f474ea2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9e7b2251_07a5_4c6d_8699_aa700f474ea2">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_e59817a9_d227_42f8_8068_2cfa180be144"/>
+        <rdfs:label xml:lang="fr">Contient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_ce37c8b9_45ad_44ce_83a2_3f71cacd7048 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_ce37c8b9_45ad_44ce_83a2_3f71cacd7048">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf"/>
+        <rdfs:label xml:lang="fr">APourFIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_e59817a9_d227_42f8_8068_2cfa180be144 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_e59817a9_d227_42f8_8068_2cfa180be144">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:label xml:lang="fr">SeSitueDans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_e9031461_a55c_470c_abf6_8f1044f5be6b -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_e9031461_a55c_470c_abf6_8f1044f5be6b">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:label xml:lang="fr">APourLocalisation</rdfs:label>
+        <rdfs:label>a pour localisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_f190f602_937a_4d22_9534_7b024a1e44f5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_f190f602_937a_4d22_9534_7b024a1e44f5">
+        <rdfs:label xml:lang="fr">EstLaCapitaleDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="fr">APourDurée</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_5a501ae2_a6a0_44eb_aea5_320a7db6c262 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_5a501ae2_a6a0_44eb_aea5_320a7db6c262">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:label xml:lang="fr">APourTimestamp</rdfs:label>
+        <rdfs:label>a pour timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_c154f7af_ed69_4949_b23e_742688273bd8 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_c154f7af_ed69_4949_b23e_742688273bd8">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="fr">APourValeur</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_0a730c9a_fe6d_4e01_96f2_ef277637b1fd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_0a730c9a_fe6d_4e01_96f2_ef277637b1fd">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_acc3fec9_a2e8_4c90_9b32_3247290631f2"/>
+        <rdfs:label xml:lang="fr">PhénomèneLong</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b">
+        <rdfs:label xml:lang="fr">Phenomene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1fbd5fd8_bed4_43ab_9807_94d22e3171e7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1fbd5fd8_bed4_43ab_9807_94d22e3171e7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:label xml:lang="fr">Continent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_27ecb238_e31b_40a7_b9f7_f5715e1c3909 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_27ecb238_e31b_40a7_b9f7_f5715e1c3909">
+        <rdfs:label xml:lang="fr">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_3a3d3493_2a65_4d1e_b777_3a2c232deb40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_3a3d3493_2a65_4d1e_b777_3a2c232deb40">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_417b7e50_6f50_4e04_ac2d_794ecedfdca4"/>
+        <rdfs:label xml:lang="fr">Ensoleillement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_417b7e50_6f50_4e04_ac2d_794ecedfdca4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_417b7e50_6f50_4e04_ac2d_794ecedfdca4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:label xml:lang="fr">BeauTemps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_6e7b5e6b_77bc_4d33_bd9c_c380dc821bc7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_6e7b5e6b_77bc_4d33_bd9c_c380dc821bc7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a123aa86_36dd_4ae6_9220_2f7f21d8f8ed"/>
+        <rdfs:label xml:lang="fr">Brouillard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_740d30ef_e895_4bca_a9d5_96d837893f8d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_740d30ef_e895_4bca_a9d5_96d837893f8d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f"/>
+        <rdfs:label xml:lang="fr">Pays</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f">
+        <rdfs:label xml:lang="fr">Paramètre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_8000353d_b9e1_4281_9eaf_a2ca56d15215 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_8000353d_b9e1_4281_9eaf_a2ca56d15215">
+        <rdfs:label xml:lang="fr">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106">
+        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_27ecb238_e31b_40a7_b9f7_f5715e1c3909"/>
+        <rdfs:label xml:lang="fr">ObservationMétéo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_968f549d_69c8_48a5_b26e_9d7a484faf1d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_968f549d_69c8_48a5_b26e_9d7a484faf1d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:label xml:lang="fr">Plateforme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a0265271_ffd4_4f48_a687_87a2cc07a422 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a0265271_ffd4_4f48_a687_87a2cc07a422">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_36eb70b4_4ef1_4641_b2d1_a3ec1199d3ab"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_27ecb238_e31b_40a7_b9f7_f5715e1c3909"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLObjectProperty_9290938f_f049_4a18_9c43_1cec5ffb628e"/>
+                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_df72acb5_7e8b_458e_a14c_e07d3ac066bb"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_c154f7af_ed69_4949_b23e_742688273bd8"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a123aa86_36dd_4ae6_9220_2f7f21d8f8ed"/>
+        <rdfs:label xml:lang="fr">Pluie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a123aa86_36dd_4ae6_9220_2f7f21d8f8ed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_a123aa86_36dd_4ae6_9220_2f7f21d8f8ed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:label xml:lang="fr">MauvaisTemps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_acc3fec9_a2e8_4c90_9b32_3247290631f2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_acc3fec9_a2e8_4c90_9b32_3247290631f2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_1e426955_d0e1_474f_b42c_5d3d4fb6b62b"/>
+        <rdfs:label xml:lang="fr">PhénomèneCourt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf">
+        <rdfs:label xml:lang="fr">Instant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_80264105_9ea8_4258_ae15_6eac81019106"/>
+        <rdfs:label xml:lang="fr">Ville</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_0506e8ac_5a8c_4129_be18_43bc48d7d486 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_0506e8ac_5a8c_4129_be18_43bc48d7d486">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_05598e74_622d_4c73_ad07_a95036bf72d6"/>
+        <rdfs:label xml:lang="fr">VitesseVent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_05598e74_622d_4c73_ad07_a95036bf72d6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_05598e74_622d_4c73_ad07_a95036bf72d6">
+        <rdfs:label xml:lang="fr">ForceDuVent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_3b15caa5_eb88_4d88_8695_11023e9f40a6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_3b15caa5_eb88_4d88_8695_11023e9f40a6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="fr">Hygrométrie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_57d5fd45_b13c_4ff6_9111_0d12dd9bad55 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_57d5fd45_b13c_4ff6_9111_0d12dd9bad55">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <rdfs:label xml:lang="fr">Temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_64def7b4_93c9_42cb_9a96_fe37e68a33b0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_64def7b4_93c9_42cb_9a96_fe37e68a33b0">
+        <rdfs:label xml:lang="fr">LaVilleLumière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6c588ced_9b71_4d44_bd37_1364ff5a4d8f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6c588ced_9b71_4d44_bd37_1364ff5a4d8f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_c2cbabad_c0ca_4687_9313_00ca35b1c4cf"/>
+        <OWLDataProperty_5a501ae2_a6a0_44eb_aea5_320a7db6c262 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2015-01-29T15:05:57Z</OWLDataProperty_5a501ae2_a6a0_44eb_aea5_320a7db6c262>
+        <rdfs:label xml:lang="fr">I1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6f186a78_f997_4960_875d_99d708358ccd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6f186a78_f997_4960_875d_99d708358ccd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_eb137da3_9c46_4ba8_8492_42b7d8f3063f"/>
+        <OWLObjectProperty_e59817a9_d227_42f8_8068_2cfa180be144 rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_fba6f52a_d953_44f4_992a_220c4d7b7905"/>
+        <rdfs:label xml:lang="fr">Toulouse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c170391_59e0_4a37_9e19_f13951b292f9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c170391_59e0_4a37_9e19_f13951b292f9">
+        <rdfs:label xml:lang="fr">Europe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c46c052_06aa_4a82_bf8e_6aa7ecc8cf69 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c46c052_06aa_4a82_bf8e_6aa7ecc8cf69">
+        <rdfs:label xml:lang="fr">Paris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_8f70d9da_850b_4a99_9dd9_5aa59ef6df7a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_8f70d9da_850b_4a99_9dd9_5aa59ef6df7a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="fr">PressionAtmosphérique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_9eb113f6_601c_4d3f_bc76_26fb043c538a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_9eb113f6_601c_4d3f_bc76_26fb043c538a">
+        <OWLObjectProperty_36eb70b4_4ef1_4641_b2d1_a3ec1199d3ab rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_f5383c8f_a2ba_4e87_8d69_6b00dbf33644"/>
+        <OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</OWLDataProperty_323cb372_c24a_4cda_8339_aee1258c1c5d>
+        <rdfs:label xml:lang="fr">A1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_df72acb5_7e8b_458e_a14c_e07d3ac066bb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_df72acb5_7e8b_458e_a14c_e07d3ac066bb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_7dd94ccf_34d9_4a3b_9cbc_33d17c81b53f"/>
+        <rdfs:label xml:lang="fr">Pluviométrie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_f5383c8f_a2ba_4e87_8d69_6b00dbf33644 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_f5383c8f_a2ba_4e87_8d69_6b00dbf33644">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLClass_907487c6_7b27_41e6_b0f7_10219516c110"/>
+        <OWLObjectProperty_1ff22eda_ec30_4a8f_a109_20a52afe51d3 rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6c588ced_9b71_4d44_bd37_1364ff5a4d8f"/>
+        <OWLObjectProperty_9290938f_f049_4a18_9c43_1cec5ffb628e rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_df72acb5_7e8b_458e_a14c_e07d3ac066bb"/>
+        <OWLObjectProperty_e9031461_a55c_470c_abf6_8f1044f5be6b rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6f186a78_f997_4960_875d_99d708358ccd"/>
+        <OWLDataProperty_c154f7af_ed69_4949_b23e_742688273bd8 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4949.0</OWLDataProperty_c154f7af_ed69_4949_b23e_742688273bd8>
+        <rdfs:label xml:lang="fr">P1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_fba6f52a_d953_44f4_992a_220c4d7b7905 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_fba6f52a_d953_44f4_992a_220c4d7b7905">
+        <OWLObjectProperty_130e0a94_36f0_401a_bb33_fa75977e4d3d rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c170391_59e0_4a37_9e19_f13951b292f9"/>
+        <OWLObjectProperty_24798d87_7877_4fdc_968d_dd1ea8e8488b rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_64def7b4_93c9_42cb_9a96_fe37e68a33b0"/>
+        <OWLObjectProperty_24798d87_7877_4fdc_968d_dd1ea8e8488b rdf:resource="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c46c052_06aa_4a82_bf8e_6aa7ecc8cf69"/>
+        <rdfs:label xml:lang="fr">France</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_6f186a78_f997_4960_875d_99d708358ccd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/scriptopathe/ontologies/2017/0/untitled-ontology-2#OWLNamedIndividual_7c46c052_06aa_4a82_bf8e_6aa7ecc8cf69"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

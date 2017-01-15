@@ -10,12 +10,17 @@
                 <span (click)="toogleExpand()" class="card-title activator grey-text text-darken-4">
                     {{entry.name}}
                 </span>
-                <h5>Abstract</h5>
-                <markdown [data]="entry.abstract">
-                </markdown>
-                <h5>Experience Gains</h5>
-                <markdown [data]="entry.conclusion">
-                </markdown>
+
+                <table class="bordered striped">
+                    <tr>
+                        <td width="150">Abstract</td>
+                        <td><markdown [data]="entry.abstract"></markdown></td>
+                    </tr>
+                    <tr>
+                        <td width="150">Experience Gains</td>
+                        <td><markdown [data]="entry.conclusion"></markdown></td>
+                    </tr>
+                </table>
 
 
                 <!-- Competences -->
@@ -81,6 +86,14 @@
                         Link to document
                         </a>
                         <br />
+                    </div>
+                </div>
+
+                <div *ngIf="entry.annexes">
+
+                    <h4>Appendix</h4>
+                    <div *ngFor="let annex of entry.annexes; let i = index" class="valign-wrapper">
+                        <i style="margin-left: 0.5em; margin-right: 0.5em" class="tiny material-icons valign">system_update_alt</i> <a class="orange-text text-darken-2 valign" [href]="sanitizeRessourceUrl(annex.url)"> {{ annex.name }}</a>
                     </div>
                 </div>
             </div>

@@ -34,6 +34,11 @@ export interface Content
     contentValue : string
 }
 
+export interface Annex
+{
+    url : string
+    name : string
+}
 /**
  * Represents an entry in the portfolio.
  */
@@ -48,6 +53,7 @@ export interface Entry
     conclusion : string
     content : Content
     thumbnailUrl: string
+    annexes? : Annex[]
 }
 
 /**

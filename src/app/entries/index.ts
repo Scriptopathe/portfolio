@@ -1,2 +1,5 @@
-import './wireless-networks'
-import './dummy'
+import './wireless-networks/sigfox'
+import './wireless-networks/wsn-mac'
+import './data-processing/websem'
+import './middleware-soa/om2m'
+import './middleware-soa/cloud'
