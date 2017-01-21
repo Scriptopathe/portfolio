@@ -12,9 +12,21 @@
                                     <tbody>
                                         <tr *ngFor="let competence of getKeys(uf); let i = index">
                                             <td [class]="module.color + ' lighten-5' " style="width: 4em">{{ i + 1 }}</td>
-                                            <td><a class="grey-text text-darken-4" [routerLink]="['/portfolio/competence', module.name + '::' + ufId + '::' + competence]">
-                                                {{ uf.competences[competence] }}
-                                            </a></td>
+                                            <td *ngIf="!isCompetenceEmpty(module, ufId, competence)">
+                                                <a class="grey-text text-darken-4" [routerLink]="['/portfolio/competence', module.name + '::' + ufId + '::' + competence]">
+                                                    {{ uf.competences[competence] }}
+                                                </a>
+                                            </td>
+                                            <td *ngIf="isCompetenceEmpty(module, ufId, competence)">
+                                                <span class="grey-text text-darken-4">
+                                                    {{ uf.competences[competence] }}
+                                                </span>
+                                            </td>
+                                            <td style="width: 2em">
+                                                <div class="chip">
+                                                    {{ getCompetenceCounter(module, ufId, competence) }}
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -16,6 +16,7 @@ export enum ExperienceType {
  */
 export enum ContentType {
     PDFDocumentURL,
+    YoutubeURL,
     MarkdownDocumentURL, // not supported
     RawMarkdownDocument,
     Link

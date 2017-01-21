@@ -13,6 +13,7 @@ let entry : common.Entry = {
         Modules.Competence(Modules.WirelessNetworks, 2, 4),
         Modules.Competence(Modules.WirelessNetworks, 2, 5),
         Modules.Competence(Modules.WirelessNetworks, 2, 6),
+        Modules.Competence(Modules.InnovationAndHumanities, 3) // Savoir convaincre
     ]),
     tags: ["Wireless Sensor Networks", "WiseMAC"],
 

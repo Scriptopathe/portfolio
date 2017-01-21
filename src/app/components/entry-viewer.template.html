@@ -77,6 +77,10 @@
                     <markdown [data]="entry.content.contentValue"></markdown>
                 </div>
 
+                <!-- Youtube video YoutubeURL -->
+                <div *ngIf="entry.content.contentType == contentType.YoutubeURL">
+                    <iframe width="800" height="450" [src]="sanitizeRessourceUrl(entry.content.contentValue)" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <!-- Link document -->
                 <div *ngIf="entry.content.contentType == contentType.Link">
                     <div style="text-align: center" class="margin-bottom: 1em;">

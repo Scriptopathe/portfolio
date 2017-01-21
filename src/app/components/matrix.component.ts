@@ -34,6 +34,15 @@ export class MatrixComponent  {
         return rows
     }
 
+    getCompetenceCounter(mod : Module, uf : number, comp : number) {
+        if(!mod.modcounters) return 0
+        return mod.modcounters[uf][comp]
+    }
+
+    isCompetenceEmpty(mod : Module, uf : number, comp : number) {
+        return this.getCompetenceCounter(mod, uf, comp) == 0
+    }
+
     getKeys(uf : UF) {
         return Object.keys(uf.competences)
     }

@@ -14,6 +14,9 @@ export interface Module
 
     /** UFs in the module */
     ufs : UF[]
+
+    /** Counters for each uf of the module.*/
+    modcounters? : number[][]
 }
 
 export class CompetenceID 
@@ -48,12 +51,27 @@ export class Modules {
     static Competence(mod : Module, ufId? : number, competenceId? : number) : CompetenceID[] {
         let array = []
         let ufIds = ufId == undefined ? mod.ufs.map((value, index) => index) : [ufId - 1]
+
+        // Initializes counters.
+        if(!mod.modcounters) {
+            mod.modcounters = []
+            for(let ufI in mod.ufs) {
+                let uf = mod.ufs[ufI]
+                mod.modcounters.push([])
+                for(let compI in uf.competences) {
+                    mod.modcounters[ufI].push(0)
+                }
+            }
+        }
+
         for(let uf of ufIds) {
             let competenceIds = competenceId == undefined ? mod.ufs[uf].competences.map((value, index) => index) : [competenceId - 1]
             for(let competence of competenceIds) {
                 array.push(new CompetenceID(mod, uf, competence))
+                mod.modcounters[uf][competence] += 1
             }
         }
+
         return array 
     }
 
@@ -66,7 +84,7 @@ export class Modules {
     }
 
     static WirelessNetworks : Module = { 
-        name: "Wireless Networks",
+        name: "Wireless Networks and Security",
         color: "blue", // deep-purple lighten-2
         ufs : [
             {
@@ -166,7 +184,7 @@ export class Modules {
                 competences : [
                     "Définir les différentes phases du développement logiciel",
                     "Savoir les différents méthodologies de gestion de projet.",
-                    "Appliquer une méthologie de gestion de projet pour le projet « Gestion de stages»",
+                    "Appliquer une méthologie de gestion de projet pour le projet intégrateur.",
                 ]
             },
             {
@@ -244,12 +262,36 @@ export class Modules {
         ]
     }
 
+    static Miscellaneous : Module = { 
+        name: "Miscellaneous",
+        color: "light-blue", // orange darken-3
+        ufs : [
+            {
+                name: "Linux Kernel Development",
+                competences : [
+                    "Contribute to an Open Source project",
+                    "Understand and improve a Linux Kernel submodule"
+                ]
+            },
+            {
+                name: "3D application development",
+                competences : [
+                    "Understand the graphics card pipelines",
+                    "Understand shader languages and develop custom shaders",
+                    "Understand and implement 3D processing techniques (Bloom, HDR, Depth of Field)",
+                    "Generate 3D models from mathematical models"
+                ]
+            },
+        ]
+    }
+
     static ALL : Module[] = [
         Modules.SmartDevices, 
         Modules.WirelessNetworks, 
         Modules.MiddlewareService,
         Modules.DataProcessing, 
         Modules.InnovationAndHumanities, 
-        Modules.Project
+        Modules.Project,
+        Modules.Miscellaneous
     ]
 }
