@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Semantic Web",
     experienceType: common.ExperienceType.Academic,
     module: Modules.DataProcessing,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.DataProcessing, 2)
     ]),

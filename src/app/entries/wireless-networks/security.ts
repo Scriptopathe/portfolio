@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Security in IoT Platforms",
     experienceType: common.ExperienceType.Academic,
     module: Modules.WirelessNetworks,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.WirelessNetworks, 1)
     ]),

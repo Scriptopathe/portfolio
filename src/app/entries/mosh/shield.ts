@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Shield design for a gas sensor.",
     experienceType: common.ExperienceType.Academic,
     module: Modules.SmartDevices,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.SmartDevices, 2, 3),
         Modules.Competence(Modules.SmartDevices, 2, 4),

@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Cloud computing and autonomic management",
     experienceType: common.ExperienceType.Academic,
     module: Modules.MiddlewareService,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.MiddlewareService, 3)
     ]),

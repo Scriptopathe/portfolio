@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Middleware for IoT : OM2M lab",
     experienceType: common.ExperienceType.Academic,
     module: Modules.MiddlewareService,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.MiddlewareService, 2)
     ]),

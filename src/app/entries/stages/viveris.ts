@@ -3,9 +3,10 @@ import { Modules } from '../competences'
 
 let entry : common.Entry = {
     /* ~~~~~~~~~~~~~~~~ General ~~~~~~~~~~~~~~~~ */
-    name: "Viveris technologies internship",
+    name: "Internship - Viveris technologies : optimization of an intelligent firewall.",
     experienceType: common.ExperienceType.Professional,
     module: Modules.Miscellaneous,
+    year: 2016,
     competences: Modules.Competences([
         Modules.Competence(Modules.Miscellaneous, 1),
         Modules.Competence(Modules.InnovationAndHumanities, 3)
@@ -55,7 +56,7 @@ lots of good coding practice !
         
     ],
     /** Ajouter la pièce jointe */
-    thumbnailUrl: "assets/images/kernel.jpeg"
+    thumbnailUrl: "assets/images/viveris.jpg"
 };
 
 common.library.entries.push(entry)

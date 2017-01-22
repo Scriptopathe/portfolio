@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "3D real-time chaotic fractal landscape rendering",
     experienceType: common.ExperienceType.Personnal,
     module: Modules.Miscellaneous,
+    year: 2013,
     competences: Modules.Competences([
         Modules.Competence(Modules.Miscellaneous, 2)
     ]),

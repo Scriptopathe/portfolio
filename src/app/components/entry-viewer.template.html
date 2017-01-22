@@ -12,11 +12,11 @@
                 </span>
 
                 <table class="bordered striped">
-                    <tr>
+                    <tr *ngIf="entry.abstract">
                         <td width="150">Abstract</td>
                         <td><markdown [data]="entry.abstract"></markdown></td>
                     </tr>
-                    <tr>
+                    <tr *ngIf="entry.conclusion">
                         <td width="150">Experience Gains</td>
                         <td><markdown [data]="entry.conclusion"></markdown></td>
                     </tr>
@@ -83,6 +83,8 @@
                 </div>
                 <!-- Link document -->
                 <div *ngIf="entry.content.contentType == contentType.Link">
+                    <br />
+                    <br />
                     <div style="text-align: center" class="margin-bottom: 1em;">
                         <a class="waves-effect waves-light btn" 
                         target="_blank"
@@ -93,7 +95,7 @@
                     </div>
                 </div>
 
-                <div *ngIf="entry.annexes">
+                <div *ngIf="entry.annexes && entry.annexes.length > 0">
 
                     <h4>Appendix</h4>
                     <div *ngFor="let annex of entry.annexes; let i = index" class="valign-wrapper">

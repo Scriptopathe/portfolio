@@ -33,6 +33,54 @@
             </div>
         </div>
     </div>
+
+
+    <div class="row">
+        <div class="col s6">
+            <div class="card">
+                <div class="card-content" style="text-align: center">
+                    <h4>Competence matrix</h4>
+                    <a [routerLink]="['/matrix']"><img src="assets/images/matrix.png" width="30%" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s6">
+            <div class="card">
+                <div class="card-content" style="text-align: center">
+                    <h4>My experiences</h4>
+                    <a [routerLink]="['/portfolio']"> <img src="assets/images/experiences.jpg" width="30%"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <h4>List of experiences</h4>
+                    <table class="table bordered highlight">
+                        <thead>
+                            <tr>
+                                <th width="40">Year</th>
+                                <th width="100">Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr [class]="getColor(entry)" style="line-height: 0.5em" *ngFor="let entry of entries">
+                                <td>{{ entry.year }}</td>
+                                <td>{{ exp2str(entry.experienceType) }} </td>
+                                <td>{{ entry.name }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col s12">
             <div class="card">

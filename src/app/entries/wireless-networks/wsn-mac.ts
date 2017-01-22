@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Mac layers for Wireless Sensor Networks",
     experienceType: common.ExperienceType.Academic,
     module: Modules.WirelessNetworks,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.WirelessNetworks, 2, 1),
         Modules.Competence(Modules.WirelessNetworks, 2, 2),

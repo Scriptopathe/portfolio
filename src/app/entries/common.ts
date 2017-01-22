@@ -54,6 +54,7 @@ export interface Entry
     conclusion : string
     content : Content
     thumbnailUrl: string
+    year: number
     annexes? : Annex[]
 }
 

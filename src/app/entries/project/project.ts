@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Project : Live GPS tracking of sailing ships",
     experienceType: common.ExperienceType.Academic,
     module: Modules.Project,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.MiddlewareService, 1), // SOA
         Modules.Competence(Modules.DataProcessing, 1), // Software Engineering

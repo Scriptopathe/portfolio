@@ -6,6 +6,7 @@ let entry : common.Entry = {
     name: "Gas sensor datasheet",
     experienceType: common.ExperienceType.Academic,
     module: Modules.SmartDevices,
+    year: 2017,
     competences: Modules.Competences([
         Modules.Competence(Modules.SmartDevices, 1, 2),
         Modules.Competence(Modules.SmartDevices, 1, 3),
