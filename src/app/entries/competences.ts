@@ -84,7 +84,7 @@ export class Modules {
     }
 
     static WirelessNetworks : Module = { 
-        name: "Wireless Networks and Security",
+        name: "Wireless Networks",
         color: "blue", // deep-purple lighten-2
         ufs : [
             {

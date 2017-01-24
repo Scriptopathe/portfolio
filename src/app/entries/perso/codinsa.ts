@@ -73,7 +73,7 @@ In the end, the API for each available language was completely auto-generated fr
         },
     ],
 
-    thumbnailUrl: "assets/images/codinsa.jpg"
+    thumbnailUrl: "assets/images/codinsa.png"
 };
 
 common.library.entries.push(entry)
