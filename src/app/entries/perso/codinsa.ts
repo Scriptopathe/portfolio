@@ -46,9 +46,8 @@ In the end, the API for each available language was completely auto-generated fr
     
     /* ~~~~~~~~~~~~~~~~ Content ~~~~~~~~~~~~~~~~ */ 
     content: {
-        contentType: common.ContentType.YoutubeURL,
-        contentValue: 
-        `https://www.youtube.com/embed/DDCWPk_VSkI`
+        contentType: common.ContentType.PDFDocumentURL,
+        contentValue: "assets/annexes/codinsa/sujet.pdf"
     },
     
     annexes : [
@@ -74,7 +73,7 @@ In the end, the API for each available language was completely auto-generated fr
         },
     ],
 
-    thumbnailUrl: "assets/images/TODO.jpg"
+    thumbnailUrl: "assets/images/codinsa.jpg"
 };
 
 common.library.entries.push(entry)

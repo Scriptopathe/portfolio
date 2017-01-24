@@ -55,7 +55,7 @@ the known vulnerabilities of components as they are discovered, and take the rig
     },
     
 
-    thumbnailUrl: "assets/images/sigfox.png"
+    thumbnailUrl: "assets/images/security.jpg"
 };
 
 common.library.entries.push(entry)
