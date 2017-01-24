@@ -17,11 +17,14 @@ export class EntryViewerComponent  {
 
     public contentType = ContentType
     public experienceType = ExperienceType
-    private _expanded : boolean = false;
+    public expanded : boolean = false;
     constructor(private sanitizer : DomSanitizer, private dataService : DataService) {        
         
     }
 
+    ngOnInit() {
+        this.expanded = false;
+    }
     /**
      * Minimal height of the entry viewer component.
      * If it is a pdf file, the minHeight will grow  when the card component is
@@ -29,8 +32,8 @@ export class EntryViewerComponent  {
      */
     get minHeight() {
         let appendixCount = this.entry.annexes ? this.entry.annexes.length : 0
-        let totalSize = (50 * appendixCount + 800) + "px"
-        var minHeight = this._expanded ? totalSize : "200px"
+        let totalSize = (50 * appendixCount + 800) + "px"   
+        var minHeight = this.expanded ? totalSize : "200px"
         var value = this.entry.content.contentType == ContentType.PDFDocumentURL ? minHeight : "200px"
         return this.sanitizer.bypassSecurityTrustStyle(value)
     }
@@ -48,6 +51,6 @@ export class EntryViewerComponent  {
     }
 
     toogleExpand() {
-        this._expanded = !this._expanded
+        this.expanded = !this.expanded
     }
 }

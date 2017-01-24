@@ -8,8 +8,7 @@ let entry : common.Entry = {
     module: Modules.SmartDevices,
     year: 2017,
     competences: Modules.Competences([
-        Modules.Competence(Modules.SmartDevices, 1, 2),
-        Modules.Competence(Modules.SmartDevices, 1, 3),
+        Modules.Competence(Modules.SmartDevices, 1)
     ]),
     tags: ["datasheet", "gas sensor"],
 

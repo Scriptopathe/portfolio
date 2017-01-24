@@ -140,7 +140,7 @@ export class Modules {
 
     static MiddlewareService : Module = { 
         name: "Middleware & SOA",
-        color: "yellow", // teal accent-3
+        color: "orange", // teal accent-3
         ufs : [
             {
                 name: "Architecture de service",
@@ -177,7 +177,7 @@ export class Modules {
 
     static DataProcessing : Module = { 
         name: "Data processing",
-        color: "orange", // green darken-3
+        color: "red", // green darken-3
         ufs : [
             {
                 name: "Ingénierie logicielle",
@@ -208,7 +208,7 @@ export class Modules {
 
     static InnovationAndHumanities : Module = { 
         name: "Innovation and Humanities",
-        color: "deep-orange", // yellow darken-3
+        color: "green", // yellow darken-3
         ufs : [
             {
                 name: "Gérer un projet innovant",
@@ -247,7 +247,7 @@ export class Modules {
 
     static Project : Module = { 
         name: "Project",
-        color: "light-green", // orange darken-3
+        color: "blue", // orange darken-3
         ufs : [
             {
                 name: "Projet",

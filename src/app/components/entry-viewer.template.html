@@ -78,9 +78,17 @@
                 </div>
 
                 <!-- Youtube video YoutubeURL -->
-                <div *ngIf="entry.content.contentType == contentType.YoutubeURL">
-                    <iframe width="800" height="450" [src]="sanitizeRessourceUrl(entry.content.contentValue)" frameborder="0" allowfullscreen></iframe>
+                <div *ngIf="expanded">
+                    <div *ngIf="entry.content.contentType == contentType.YoutubeURL">
+                        <iframe width="800" height="450" [src]="sanitizeRessourceUrl(entry.content.contentValue)" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Soundcloud URL -->
+                    <div *ngIf="entry.content.contentType == contentType.SoundcloudURL">
+                        <iframe width="100%" height="450" scrolling="no" frameborder="no" [src]="sanitizeRessourceUrl(entry.content.contentValue)"></iframe>
+                    </div>
                 </div>
+                
                 <!-- Link document -->
                 <div *ngIf="entry.content.contentType == contentType.Link">
                     <br />
@@ -113,12 +121,12 @@
     </div>
 </div>
 <!--
-    <div class="material-box-title">{{entry.name}}</div> 
-    <h4>Abstract</h4>
-    {{ entry.abstract }}
-    <h4>Content</h4>
-    <h4>Experience Gains</h4>
-    {{ entry.conclusion }}
+<div class="material-box-title">{{entry.name}}</div> 
+<h4>Abstract</h4>
+{{ entry.abstract }}
+<h4>Content</h4>
+<h4>Experience Gains</h4>
+{{ entry.conclusion }}
 
-    <hr />
-    <strong>Tags: </strong> <span *ngFor="let tag of entry.tags">{{tag}}</span>-->
+<hr />
+<strong>Tags: </strong> <span *ngFor="let tag of entry.tags">{{tag}}</span>-->

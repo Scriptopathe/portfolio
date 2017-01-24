@@ -8,6 +8,8 @@ let entry : common.Entry = {
     module: Modules.SmartDevices,
     year: 2017,
     competences: Modules.Competences([
+        Modules.Competence(Modules.SmartDevices, 2, 1),
+        Modules.Competence(Modules.SmartDevices, 2, 2),
         Modules.Competence(Modules.SmartDevices, 2, 3),
         Modules.Competence(Modules.SmartDevices, 2, 4),
     ]),
@@ -21,11 +23,18 @@ display them (with a LCD screen) and send them via Bluetooth. This entry contain
 
     /* ~~~~~~~~~~~~~~~~ Conclusion ~~~~~~~~~~~~~~~~ */
     conclusion: `
+# Shield design
 It is the first time I had to deal with designing a shield.  Thanks to this lab, I learned how to use a PCB design software, Eagle, to create and use my components in 
 order to create a full board. I had to face routing problems, integrate specific contraints related to the fabrication process 
 (pads size, angles of the route intersections, and so on).
 It was a completely new experience for me, having a more software-oriented background. I cannot honnestly say that I master the design process perfectly, but at least
-I got introduced to it, and I am now more aware of some problems that PCB designers face.   
+I got introduced to it, and I am now more aware of some problems that PCB designers face. 
+
+# Arduino and microcontroler
+During the labs, I also manipulated arduino to build prototypes. 
+I had already manipulated the Arduino platform before, and I really think it is
+great for building prototypes quickly.
+
 `,
     
     /* ~~~~~~~~~~~~~~~~ Content ~~~~~~~~~~~~~~~~ */ 

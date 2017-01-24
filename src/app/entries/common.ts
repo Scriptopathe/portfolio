@@ -17,6 +17,7 @@ export enum ExperienceType {
 export enum ContentType {
     PDFDocumentURL,
     YoutubeURL,
+    SoundcloudURL,
     MarkdownDocumentURL, // not supported
     RawMarkdownDocument,
     Link
@@ -55,6 +56,7 @@ export interface Entry
     content : Content
     thumbnailUrl: string
     year: number
+    year2? : number 
     annexes? : Annex[]
 }
 
