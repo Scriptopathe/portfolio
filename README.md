@@ -5,7 +5,7 @@ Ce README concerne la version 0.0 du projet. Cette version n'est plus maintenue.
 La version actuelle est la RELEASE 1.0. 
 
 # Dependences
-Node :              ```sudo apt-get install nodejs``` 
+Node :              ```sudo apt-get install npm``` 
 
 # Premier démarrage
 Installation du portfolio et des packages :
